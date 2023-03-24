@@ -2,13 +2,14 @@
 import { Detail } from "../lib/types";
 
 export default function Header(
-   { foreword, category }: { foreword: Detail | undefined; category: Detail | undefined; }
+   { foreword }: { foreword: Detail | undefined; }
 ) {
 
-   const categories = category?.description.split(', ');
+   const categories = foreword?.subtitle.split(', ') || [];
+   const urls = foreword?.url.split(', ') || [];
 
    return (<>
-      { foreword && categories &&
+      { foreword &&
          <div id="foreword" className="justify-center text-center mx-auto max-w-container px-4 pt-4 sm:px-6 lg:flex lg:px-8 gap-12 bg-white">
             <div className="relative z-20 mx-auto max-w-[60rem] pb-4 pt-8 lg:mx-0 lg:w-[60rem] lg:max-w-none lg:flex-none lg:pb-4 lg:pt-16">
                <h1 className="text-sm sm:text-base font-light leading-6 text-slate-400">
@@ -48,11 +49,11 @@ export default function Header(
                   { foreword.description }
                </p>
                <div className="mt-8 flex gap-4 justify-center">
-                  <a className="inline-flex justify-center rounded-lg text-sm font-semibold py-3 px-4 bg-blue-400 text-slate-100 hover:bg-blue-300 ease-linear duration-300" href="">
-                     <span>View Repo</span>
+                  <a className="inline-flex justify-center rounded-lg text-sm font-normal py-3 px-4 bg-blue-400 text-slate-100 hover:bg-blue-500 ease-linear duration-300" href={ urls[1] }>
+                     <span>{ urls[0] }</span>
                   </a>
-                  <a className="inline-flex justify-center rounded-lg text-sm font-semibold py-3 px-4 bg-white text-slate-500 border border-slate-400 hover:bg-white/25 hover:border-blue-500 ease-linear duration-300" href="">
-                     <span>Read More</span>
+                  <a className="inline-flex justify-center rounded-lg text-sm font-normal py-3 px-4 bg-white text-slate-500 border border-blue-400 hover:bg-white/25 hover:border-blue-500 ease-linear duration-300" href={ urls[3] }>
+                     <span>{ urls[2] }</span>
                   </a>
                </div>
             </div>

@@ -1,14 +1,15 @@
 
-import './globals.css';
+import '../globals.css';
 
 export const metadata = {
-  title: 'Template for Static Websites',
-  description: 'Scaffold of Next.js, Tailwind CSS, Contentful CMS, Docker, Nginx',
+  title: 'A Web Application Template',
+  description: 'Designed as a scaffold for building company websites, marketing pages, or blogs.',
 };
 
-export default function RootLayout(
+export default function DetailLayout(
   { children }: { children: React.ReactNode; }
 ) {
+
   return (
     <html lang="en">
       <body>

@@ -38,7 +38,7 @@ export async function getEntries(): Promise<{ details: Detail[], features: Featu
 
   const featureResponse = await fetchGraphQL(
     `query {
-       featuredCollection(order: id_ASC, skip: 0, limit: 15) {
+       featureCollection(order: id_ASC, skip: 0, limit: 15) {
          items {
            ${FEATURE_GRAPHQL_FIELDS}
          }
@@ -55,6 +55,6 @@ export async function getEntries(): Promise<{ details: Detail[], features: Featu
 
   return {
     details: detailEntries?.data?.detailCollection?.items,
-    features: featureEntries?.data?.featuredCollection?.items,
+    features: featureEntries?.data?.featureCollection?.items,
   };
 }

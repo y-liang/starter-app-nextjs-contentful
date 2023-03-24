@@ -20,9 +20,11 @@ export default function Cards(
                                  className="h-full w-full object-cover object-center"
                               />
                            </div>
-                           <h3 className="mt-6 text-xs text-slate-500">
+                           <h3 className="mt-6 text-xs text-slate-500 text-center">
                               <span className="absolute inset-0" />
-                              { feature.title?.toUpperCase() }
+                              <span className="text-slate-600 font-semibold">
+                                 { feature.title?.toUpperCase() }
+                              </span>
                               { ' · ' }
                               { feature.isPublished ? `Completed` : `In Progress` }
                            </h3>
