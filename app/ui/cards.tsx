@@ -7,7 +7,7 @@ export default function Cards(
 
    return (<>
       { features &&
-         <div className="bg-white-100">
+         <div className="">
             <div className="mx-auto max-w-7xl px-4 sm:px-6 md:px-8">
                <div className="mx-auto max-w-2xl py-16 sm:py-8 md:max-w-none md:py-6">
                   <div className="my-6 space-y-12 md:grid md:grid-cols-3 md:gap-x-6 md:space-y-0">
@@ -15,7 +15,7 @@ export default function Cards(
                         <Link key={ index } className="group relative hover:cursor-pointer text-slate-600 hover:underline underline-offset-4"
                            href={ `/detail#${feature.title}` }>
 
-                           <div className="relative border border-blue-500 overflow-hidden rounded-lg bg-white group-hover:opacity-100 sm:aspect-w-2 sm:aspect-h-1 sm:h-64 md:aspect-w-1 md:aspect-h-1">
+                           <div className="relative border border-blue-500 bg-white/50 overflow-hidden rounded-lg group-hover:opacity-100 sm:aspect-w-2 sm:aspect-h-1 sm:h-64 md:aspect-w-1 md:aspect-h-1">
                               <img
                                  src={ feature.image?.url }
                                  alt=""
