@@ -13,7 +13,8 @@ export default function Header(
          <div id="foreword" className="justify-center text-center mx-auto max-w-container px-4 pt-4 sm:px-6 lg:flex lg:px-8 gap-12 bg-white">
             <div className="relative z-20 mx-auto max-w-[60rem] pb-4 pt-8 lg:mx-0 lg:w-[60rem] lg:max-w-none lg:flex-none lg:pb-4 lg:pt-16">
                <h1 className="text-sm sm:text-base font-light leading-6 text-slate-400">
-                  { foreword.subtitle }
+                  {/* { foreword.subtitle } */ }
+                  Get started with building websites with the latest web technologies
                </h1>
                <p className="mt-4 text-5xl leading-[1em] font-extrabold tracking-[-0.04em] text-blue-500 sm:text-8xl sm:leading-[6rem]">
                   { foreword.title }
