@@ -12,7 +12,7 @@ export default async function Page() {
    const { details, features } = data;
 
    const findDetail = (label: string) => {
-      return details?.find((detail: Detail) => detail.label == label); // replace filter
+      return details?.find((detail: Detail) => detail.label == label);
    };
 
    return (<>

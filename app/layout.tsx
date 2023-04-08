@@ -2,8 +2,8 @@
 import './globals.css';
 
 export const metadata = {
-  title: 'A Static Website Template',
-  description: 'Minimal setup for building a website with Next.js, Tailwind CSS, Contentful CMS, Docker, Nginx',
+  title: 'Starter for Building a Website',
+  description: 'Minimal setup for building a website with Next.js, Tailwind CSS, Contentful CMS, GraphQL, Docker, Nginx',
 };
 
 export default function RootLayout(

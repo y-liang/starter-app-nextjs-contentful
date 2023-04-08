@@ -28,7 +28,7 @@ export default function Cards(
                                  { feature.title?.toUpperCase() }
                               </span>
                               { ' · ' }
-                              { feature.isPublished ? `Completed` : `In Progress` }
+                              { feature.isIcon ? `Completed` : `In Progress` }
                            </h3>
                            <p className="text-base font-semibold text-slate-900">
                               { feature.description }

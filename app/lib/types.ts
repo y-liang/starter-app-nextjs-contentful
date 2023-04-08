@@ -4,7 +4,7 @@ export type Detail = {
    title: string;
    subtitle: string;
    description: string;
-   url: string;
+   link: string;
 };
 
 export type Feature = {
@@ -12,7 +12,8 @@ export type Feature = {
    title: string;
    description: string;
    image: Image;
-   isPublished: boolean;
+   isIcon: boolean;
+   link: string;
 };
 
 type Image = {

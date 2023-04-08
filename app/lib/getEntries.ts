@@ -21,6 +21,7 @@ async function fetchGraphQL(query: string) {
         Authorization: `Bearer ${CONTENTFUL_DELIVERY_TOKEN}`,
       },
       body: JSON.stringify({ query }),
+      cache: 'no-store' // opt out of caching behavior for dynamic data fetches
     }
   );
 }

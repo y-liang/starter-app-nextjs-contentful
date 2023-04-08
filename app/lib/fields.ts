@@ -4,7 +4,7 @@ export const DETAIL_GRAPHQL_FIELDS = `
    title
    subtitle
    description
-   url
+   link
 `;
 
 export const FEATURE_GRAPHQL_FIELDS = `
@@ -14,5 +14,6 @@ export const FEATURE_GRAPHQL_FIELDS = `
    image {
       url
    }
-   isPublished
+   isIcon
+   link
 `;
