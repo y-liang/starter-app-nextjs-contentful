@@ -3,7 +3,7 @@ import './globals.css';
 
 export const metadata = {
   title: 'Starter for Building a Website',
-  description: 'Minimal setup for building a website with Next.js, Tailwind CSS, Contentful CMS, GraphQL, Docker, Nginx',
+  description: 'Build with Next.js, Tailwind CSS, Contentful CMS, GraphQL, Docker, Nginx',
 };
 
 export default function RootLayout(

@@ -37,7 +37,7 @@ export default function Header(
                         <path d="M10.933 19.231l-7.668-4.13-1.37.739a.75.75 0 000 1.32l9.75 5.25c.221.12.489.12.71 0l9.75-5.25a.75.75 0 000-1.32l-1.37-.738-7.668 4.13a2.25 2.25 0 01-2.134-.001z" />
                      </svg>
                      <span className="ml-2.5">
-                        { categories[2] }
+                        { categories[2] }&nbsp;+&nbsp;{ categories[3] }
                      </span>
                   </div>
                   <div className="flex items-center text-sm font-medium text-slate-500 ml-6">
@@ -45,7 +45,7 @@ export default function Header(
                         <path d="M15 3.75H9v16.5h6V3.75zM16.5 20.25h3.375c1.035 0 1.875-.84 1.875-1.875V5.625c0-1.036-.84-1.875-1.875-1.875H16.5v16.5zM4.125 3.75H7.5v16.5H4.125a1.875 1.875 0 01-1.875-1.875V5.625c0-1.036.84-1.875 1.875-1.875z" />
                      </svg>
                      <span className="ml-2.5">
-                        { categories[3] }&nbsp;+&nbsp;{ categories[4] }
+                        { categories[4] }&nbsp;+&nbsp;{ categories[5] }
                      </span>
                   </div>
                </div>
