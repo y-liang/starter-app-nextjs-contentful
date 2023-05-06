@@ -4,6 +4,7 @@ import Footer from "./ui/footer";
 
 import { Detail } from "./lib/types";
 import { getEntries } from "./lib/getEntries";
+import { metadata } from "./layout";
 
 
 export default async function Page() {
@@ -16,16 +17,17 @@ export default async function Page() {
    };
 
    return (<>
-      { data &&
+      {data &&
          <div className="px-4" >
             <Header
-               foreword={ findDetail('foreword') }
+               foreword={findDetail('foreword')}
+               metadata={findDetail('metadata')}
             />
             <Cards
-               features={ features }
+               features={features}
             />
             <Footer
-               afterword={ findDetail('afterword') }
+               afterword={findDetail('afterword')}
             />
          </div >
       }
