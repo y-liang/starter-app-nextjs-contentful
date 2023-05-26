@@ -106,8 +106,10 @@ The Dockerfile included here is referenced from the Next.js [_with-docker_](http
 
 ### Containerize the app with Docker
 
-* Build the Docker image using a Dockerfile: `sudo docker build -t <image-name> .`
+* Build the Docker image using a Dockerfile: `sudo docker build -f ./app.Dockerfile -t <image-name> .`
 * Run the Docker container in detached mode: `sudo docker run -d -p 3200:3200 --name <container-name> <image-name>`
+
+* Alternatively, create and start a container using a Docker Compose file: `sudo docker compose up -d`
 
 ### Reverse Proxy with Nginx
 * Configure Nginx to proxy requests and ensure its security by enabling encrypted HTTPS with an SSL certificate.

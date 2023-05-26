@@ -1,0 +1,10 @@
+services:
+
+  app:
+    build:
+      context: ./
+      dockerfile: app.Dockerfile
+    container_name: starter_app
+    ports:
+      - 3200:3200
+    restart: unless-stopped
